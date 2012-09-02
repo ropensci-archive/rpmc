@@ -8,8 +8,11 @@
 #' out[nrow(out),]
 #' }
 #' @export
-listsets <- function(transform = TRUE,
-		url = "http://www.pubmedcentral.gov/oai/oai.cgi") 
+listsets <- function(url = "http://www.pubmedcentral.gov/oai/oai.cgi") 
 { 
-	oaih_list_sets(url, transform = transform)
+	out <- oaih_list_sets(url, transform = FALSE)
+	data.frame(
+		setSpec = sapply(xpathApply(out, "//setSpec"), xmlValue),
+		setName = sapply(xpathApply(out, "//setName"), xmlValue)
+	)
 }
