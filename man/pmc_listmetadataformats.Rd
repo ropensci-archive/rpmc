@@ -1,8 +1,8 @@
-\name{listmetadataformats}
-\alias{listmetadataformats}
+\name{pmc_listmetadataformats}
+\alias{pmc_listmetadataformats}
 \title{List available metadata formats that the PubMed Central repository can disseminate.}
 \usage{
-  listmetadataformats(id = NULL, transform = TRUE,
+  pmc_listmetadataformats(id = NULL, transform = TRUE,
     url = "http://www.pubmedcentral.gov/oai/oai.cgi")
 }
 \arguments{
@@ -18,8 +18,8 @@
 }
 \examples{
 \dontrun{
-listmetadataformats() # list all possible metadata formats for PMC
-listmetadataformats("56225") # possible metadata formats for specific identifier
+pmc_listmetadataformats() # list all possible metadata formats for PMC
+pmc_listmetadataformats("56225") # possible metadata formats for specific identifier
 }
 }
 

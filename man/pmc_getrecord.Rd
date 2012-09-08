@@ -1,8 +1,9 @@
-\name{getrecord}
-\alias{getrecord}
+\name{pmc_getrecord}
+\alias{pmc_getrecord}
 \title{Retrieve an individual record from the PubMed Central repository.}
 \usage{
-  getrecord(id = NULL, transform = TRUE, prefix = "oai_dc",
+  pmc_getrecord(id = NULL, transform = TRUE,
+    prefix = "oai_dc",
     url = "http://www.pubmedcentral.gov/oai/oai.cgi")
 }
 \arguments{
@@ -23,12 +24,12 @@
 }
 \examples{
 \dontrun{
-out <- getrecord(152494, T)
+out <- pmc_getrecord(152494, T)
 out$metadata # get $identifier, $datestamp, $setSpec, or $metadata
 oaih_transform(out$metadata) # transform only metadata to a list
 
 # Full text
-getrecord(156895, T, "pmc")
+pmc_getrecord(156895, T, "pmc")
 }
 }
 

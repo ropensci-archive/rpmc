@@ -1,9 +1,10 @@
-\name{listidentifiers}
-\alias{listidentifiers}
+\name{pmc_listidentifiers}
+\alias{pmc_listidentifiers}
 \title{Retrieve record headers from the PubMed Central repository.}
 \usage{
-  listidentifiers(from = NULL, until = NULL, set = NULL,
-    prefix = "oai_dc", token = NULL, transform = TRUE,
+  pmc_listidentifiers(from = NULL, until = NULL,
+    set = NULL, prefix = "oai_dc", token = NULL,
+    transform = TRUE,
     url = "http://www.pubmedcentral.gov/oai/oai.cgi")
 }
 \arguments{
@@ -34,7 +35,7 @@
 }
 \examples{
 \dontrun{
-listidentifiers(from = '2012-07-26')
+pmc_listidentifiers(from = '2012-07-26')
 }
 }
 

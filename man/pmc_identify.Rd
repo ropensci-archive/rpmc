@@ -1,8 +1,8 @@
-\name{identify}
-\alias{identify}
+\name{pmc_identify}
+\alias{pmc_identify}
 \title{Learn about the PubMed Central OAI-PMH service.}
 \usage{
-  identify(transform = TRUE,
+  pmc_identify(transform = TRUE,
     url = "http://www.pubmedcentral.gov/oai/oai.cgi")
 }
 \arguments{
@@ -15,7 +15,7 @@
 }
 \examples{
 \dontrun{
-identify()
+pmc_identify()
 }
 }
 

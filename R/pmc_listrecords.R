@@ -1,12 +1,12 @@
 #' List the records in the PubMed Central metadata repository.
 #'
 #' @import OAIHarvester
-#' @inheritParams listidentifiers
+#' @inheritParams pmc_listmetadataformats
 #' @param prefix The prefix to use, one of: "oa_dc" (Dublin Core metadata format), 
 #' 		"pmc_fm" (PMC front matter metadata format), or "pmc" 
 #' 		(full text for open access content only)
 #' @examples \dontrun{
-#' out <- listrecords(from = '2001-03-22', until = '2001-03-22', transform=T)
+#' out <- pmc_listrecords(from = '2001-03-22', until = '2001-03-22', transform=T)
 #' nrow(out) # number of records
 #' out[3,] # a single record
 #' 
@@ -16,7 +16,7 @@
 #' oaih_transform(mout[[1]]) # convert XML to a list
 #' }
 #' @export
-listrecords <- function(from = NULL, until = NULL, set = NULL, prefix = 'oai_dc', 
+pmc_listrecords <- function(from = NULL, until = NULL, set = NULL, prefix = 'oai_dc', 
   token = NULL, transform = TRUE,
 	url = "http://www.pubmedcentral.gov/oai/oai.cgi") 
 {

@@ -12,9 +12,9 @@ URL: https://github.com/ropensci/rpmc
 Imports:
     OAIHarvester
 Collate:
-    'getrecord.R'
-    'identify.R'
-    'listidentifiers.R'
-    'listmetadataformats.R'
-    'listrecords.R'
-    'listsets.R'
+    'pmc_getrecord.R'
+    'pmc_identify.R'
+    'pmc_listidentifiers.R'
+    'pmc_listmetadataformats.R'
+    'pmc_listrecords.R'
+    'pmc_listsets.R'

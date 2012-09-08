@@ -11,12 +11,12 @@
 #' 		(full text for open access content only)
 #' @param token a token previously provided by the server to resume a request
 #'     where it last left off.
-#' @inheritParams listmetadataformats
+#' @inheritParams pmc_listmetadataformats
 #' @export
 #' @examples \dontrun{
-#' listidentifiers(from = '2012-07-26')
+#' pmc_listidentifiers(from = '2012-07-26')
 #' }
-listidentifiers <- function(from = NULL, until = NULL, set = NULL, 
+pmc_listidentifiers <- function(from = NULL, until = NULL, set = NULL, 
   prefix = 'oai_dc', token = NULL, transform = TRUE,
 	url = "http://www.pubmedcentral.gov/oai/oai.cgi")
 {

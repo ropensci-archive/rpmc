@@ -6,10 +6,10 @@
 #' @param url the base url for DataCite (leave to default)
 #' @export
 #' @examples \dontrun{
-#' listmetadataformats() # list all possible metadata formats for PMC
-#' listmetadataformats("56225") # possible metadata formats for specific identifier
+#' pmc_listmetadataformats() # list all possible metadata formats for PMC
+#' pmc_listmetadataformats("56225") # possible metadata formats for specific identifier
 #' }
-listmetadataformats <- function(id = NULL, transform = TRUE, 
+pmc_listmetadataformats <- function(id = NULL, transform = TRUE, 
 		url = "http://www.pubmedcentral.gov/oai/oai.cgi") 
 {
   if(!is.null(id) == T) {oaiid <- paste("oai:pubmedcentral.nih.gov:", id, sep="")} else

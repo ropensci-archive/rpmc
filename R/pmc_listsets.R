@@ -1,14 +1,14 @@
 #' Retrieve the set structure of DataCite, useful for selective harvesting.
 #' 
 #' @import OAIHarvester
-#' @inheritParams listmetadataformats
+#' @inheritParams pmc_listmetadataformats
 #' @examples \dontrun{
-#' out <- listsets()
+#' out <- pmc_listsets()
 #' nrow(out); head(out)
 #' out[nrow(out),]
 #' }
 #' @export
-listsets <- function(url = "http://www.pubmedcentral.gov/oai/oai.cgi") 
+pmc_listsets <- function(url = "http://www.pubmedcentral.gov/oai/oai.cgi") 
 { 
 	out <- oaih_list_sets(url, transform = FALSE)
 	data.frame(
