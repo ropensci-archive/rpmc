@@ -1,9 +1,15 @@
-# rpmc #
+rpmc
+====
 
+## UPDATE as of 2014-08-20
 
-`rpmc` accesses PubMed Central metadata using their OAI-PMH harvester. 
+This package will undergo no further development.
 
-You do not need an API key. 
+## Info
+
+`rpmc` accesses PubMed Central metadata using their OAI-PMH harvester.
+
+You do not need an API key.
 
 Documentation for the PubMed Central OAI-PMH [here](http://www.ncbi.nlm.nih.gov/pmc/tools/oai_examples/).
 
@@ -14,7 +20,7 @@ Documentation for OAI-PMH in general [here](http://www.openarchives.org/OAI/open
 
 # Install `rpmc` from GitHub:
 
-```R 
+```R
 install.packages("devtools")
 require(devtools)
 install_github("rpmc", "ropensci")
